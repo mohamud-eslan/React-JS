@@ -1,11 +1,24 @@
-
+import react, {useState} from 'react';
 import './App.css';
 const User = (props) =>{
+  const [count, setCount] = useState(4)
+  function decrementCount(){
+    setCount(preCount => preCount - 1)
+  }
+  function incrementCount(){
+    setCount(preCount => preCount + 1)
+  }
   return (
+   
     <div>
-      <h1>{props.name}</h1>
-      <h1>{props.age}</h1>
-      <h1>{props.email}</h1>
+       <>
+       <button className='buttom' onClick = {decrementCount}>-</button>
+       <span className='span'>{count}</span>
+       <button className='buttom' onClick ={incrementCount}>+</button>
+    </>
+      <h1 className='name'>{props.name}</h1>
+      <h1 className='age'>{props.age}</h1>
+      <h1 className='email'>{props.email}</h1>
 
     </div>
   )
