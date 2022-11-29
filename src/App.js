@@ -1,18 +1,20 @@
-import react, {useState} from 'react';
-import Form from './component/Form';
+import {useState} from 'react';
+//import Form from './component/Form';
 import './App.css';
 
 
 function App() {
-  const [inputForm, setInputForm] =useState({});
+  const [count, setCount] = useState(0);
+
   
   return (
     <div className="App">
-      <Form inputForm={inputForm} name='name' setInputForm={setInputForm} />
-      <Form inputForm={inputForm} name='location' setInputForm={setInputForm} />
-      <Form isFile inputForm={inputForm} name='image' setInputForm={setInputForm} />
-      <button onClick={() => setInputForm({})}>Reset</button>
-       
+      <button onClick={() => setCount(count + 1)}>
+        increment your : {count}
+        </button>
+        <button onClick={() => setCount(count - 1)}>
+        decrement your : {count}
+        </button>
        </div>
   );
 }
