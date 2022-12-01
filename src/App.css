@@ -38,3 +38,14 @@
 }
 
 
+.circle{
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  background: red;
+}
+.square{
+  width: 500px;
+  height: 500px;
+  background: orange;
+}
