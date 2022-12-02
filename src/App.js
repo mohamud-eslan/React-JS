@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Counter from './component/Counter';
 import UseCounter from './component/UseCounter';
+import UseCounterThree from './component/UseCounterThree';
 //import Input from './component/Input';
 
 // const initialValues = {
@@ -38,7 +39,8 @@ function App() {
    return (
     
     <div className="App">
-      <UseCounter/>
+      <UseCounterThree/>
+      {/* <UseCounter/> */}
       {/* <Counter/> */}
       {/* <>
       <input ref={inputRef} value={name} onChange={e => setName(e.target.value)} />
