@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Counter from './component/Counter';
+import FocusInput from './component/FocusInput';
 import UseCounter from './component/UseCounter';
 import UseCounterThree from './component/UseCounterThree';
 //import Input from './component/Input';
@@ -39,7 +40,8 @@ function App() {
    return (
     
     <div className="App">
-      <UseCounterThree/>
+      <FocusInput/>
+      {/* <UseCounterThree/> */}
       {/* <UseCounter/> */}
       {/* <Counter/> */}
       {/* <>
