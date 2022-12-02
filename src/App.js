@@ -1,5 +1,6 @@
-import {useEffect, useRef, useState} from 'react';
+import React from 'react';
 import './App.css';
+import Counter from './component/Counter';
 //import Input from './component/Input';
 
 // const initialValues = {
@@ -25,22 +26,23 @@ function App() {
   // }
 
   // const [isCircle, setIsCircle] = useState(true)
-  const [name, setName] = useState('');
-  const inputRef = useRef()
+ // const [name, setName] = useState('');
+ // const inputRef = useRef()
 
-  function focus(){
-    inputRef.current.focus()
-  }
+ // function focus(){
+//    inputRef.current.focus()
+ // }
   
  
    return (
     
     <div className="App">
-      <>
+      <Counter/>
+      {/* <>
       <input ref={inputRef} value={name} onChange={e => setName(e.target.value)} />
       <div>my name is {name}</div>
       <button onClick={focus}>focus</button>
-      </>
+      </> */}
 
       {/* <div className={isCircle ? "circle" : "square"}>
       <button onClick={() => setIsCircle(!isCircle)}>change the shape</button>
