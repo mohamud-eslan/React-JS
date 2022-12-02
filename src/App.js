@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useEffect, useRef, useState} from 'react';
 import './App.css';
 //import Input from './component/Input';
 
@@ -18,24 +18,40 @@ function App() {
   //  const incrementCount = ()=>{
   //   setCount(count + 1)
   // }
+
   // const [formData, setFormData] = useState({initialValues })
   // const handleChange = (e) =>{
   //   setFormData({...formData, [e?.target.name]: e?.target?.value});
   // }
-  const [isCircle, setIsCircle] = useState(true)
+
+  // const [isCircle, setIsCircle] = useState(true)
+  const [name, setName] = useState('');
+  const inputRef = useRef()
+
+  function focus(){
+    inputRef.current.focus()
+  }
+  
  
-  return (
+   return (
     
     <div className="App">
+      <>
+      <input ref={inputRef} value={name} onChange={e => setName(e.target.value)} />
+      <div>my name is {name}</div>
+      <button onClick={focus}>focus</button>
+      </>
 
-      <div className={isCircle ? "circle" : "square"}>
+      {/* <div className={isCircle ? "circle" : "square"}>
       <button onClick={() => setIsCircle(!isCircle)}>change the shape</button>
-      </div>
+      </div> */}
+
       {/* <h1>welcome to my counter Ap</h1>
       <h2>the count is:{count}</h2>
       <button onClick={decrementCount}>-</button> 
        <span>{count}</span>
         <button onClick={incrementCount}>+</button> */}
+
       {/* <Input formData={formData}
       handleChange={handleChange}
       name="name"
