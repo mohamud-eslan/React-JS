@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Counter from './component/Counter';
 import FocusInput from './component/FocusInput';
+import HandleClick from './component/HandleClick';
 import UseCounter from './component/UseCounter';
 import UseCounterThree from './component/UseCounterThree';
 //import Input from './component/Input';
@@ -40,10 +41,11 @@ function App() {
    return (
     
     <div className="App">
-      <FocusInput/>
-      {/* <UseCounterThree/> */}
-      {/* <UseCounter/> */}
-      {/* <Counter/> */}
+      <HandleClick />
+      {/* <FocusInput /> */}
+      {/* <UseCounterThree /> */}
+      {/* <UseCounter /> */}
+      {/* <Counter /> */}
       {/* <>
       <input ref={inputRef} value={name} onChange={e => setName(e.target.value)} />
       <div>my name is {name}</div>
