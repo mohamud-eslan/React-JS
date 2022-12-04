@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Counter from './component/Counter';
+import Counter2 from './component/Counter2';
 import FocusInput from './component/FocusInput';
 import HandleClick from './component/HandleClick';
 import UseCounter from './component/UseCounter';
@@ -15,14 +16,7 @@ import UseCounterThree from './component/UseCounterThree';
 // }
 
 function App() {
-  // const [count, setCount] = useState(4);
-
-  //  const decrementCount = ()=>{
-  //   setCount(count - 1)
-  // }
-  //  const incrementCount = ()=>{
-  //   setCount(count + 1)
-  // }
+  //
 
   // const [formData, setFormData] = useState({initialValues })
   // const handleChange = (e) =>{
@@ -42,6 +36,7 @@ function App() {
     
     <div className="App">
       <HandleClick />
+      <Counter2 />
       {/* <FocusInput /> */}
       {/* <UseCounterThree /> */}
       {/* <UseCounter /> */}
@@ -56,11 +51,7 @@ function App() {
       <button onClick={() => setIsCircle(!isCircle)}>change the shape</button>
       </div> */}
 
-      {/* <h1>welcome to my counter Ap</h1>
-      <h2>the count is:{count}</h2>
-      <button onClick={decrementCount}>-</button> 
-       <span>{count}</span>
-        <button onClick={incrementCount}>+</button> */}
+     
 
       {/* <Input formData={formData}
       handleChange={handleChange}
