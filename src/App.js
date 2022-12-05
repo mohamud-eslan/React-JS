@@ -3,6 +3,7 @@ import './App.css';
 import Counter from './component/Counter';
 import Counter2 from './component/Counter2';
 import FocusInput from './component/FocusInput';
+import Greet from './component/Greet';
 import HandleClick from './component/HandleClick';
 import UseCounter from './component/UseCounter';
 import UseCounterThree from './component/UseCounterThree';
@@ -37,6 +38,9 @@ function App() {
     <div className="App">
       <HandleClick />
       <Counter2 />
+      <Greet name="mohamud" heroName="khadar">
+        <p>this the children</p>
+      </Greet>
       {/* <FocusInput /> */}
       {/* <UseCounterThree /> */}
       {/* <UseCounter /> */}
