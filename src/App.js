@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Counter from './component/Counter';
 import Counter2 from './component/Counter2';
+import DataBase from './component/DataBase';
 import FocusInput from './component/FocusInput';
 import Greet from './component/Greet';
 import HandleClick from './component/HandleClick';
@@ -36,11 +37,12 @@ function App() {
    return (
     
     <div className="App">
-      <HandleClick />
+      <DataBase />
+      {/* <HandleClick />
       <Counter2 />
       <Greet name="mohamud" heroName="khadar">
         <p>this the children</p>
-      </Greet>
+      </Greet> */}
       {/* <FocusInput /> */}
       {/* <UseCounterThree /> */}
       {/* <UseCounter /> */}
